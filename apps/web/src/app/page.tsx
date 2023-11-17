@@ -1,15 +1,16 @@
-import Image from 'next/image'
-import { Card } from 'ui'
-
 export default function Home() {
   return (
     <div>
-      <Card title="Hello World" href="/">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-        deserunt voluptatibus dolor, debitis alias asperiores reiciendis
-        nesciunt dignissimos inventore ipsam totam iste cumque at deleniti cum?
-        Voluptatum officia velit minus.
-      </Card>
+      <div className="bg-gradient-to-t from-marine-600 to-marine-500 px-6 py-5 flex flex-col gap-8">
+        <img
+          src="https://github.com/arthurrios.png"
+          alt="profile photo"
+          className="rounded-full h-16 w-16 self-end"
+        />
+        <span className="text-2xl font-bold leading-heading text-mirage-50">
+          Dashboard
+        </span>
+      </div>
     </div>
   )
 }
