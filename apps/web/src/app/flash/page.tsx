@@ -1,6 +1,6 @@
 export default function Flash() {
   return (
-    <div className="bg-gradient-to-t from-marine-600 to-marine-500 h-screen text-mirage-50 flex flex-col">
+    <div className="bg-gradient-to-t from-marine-600 to-marine-500 h-screen text-mirage-50 flex flex-col md:items-center">
       <div className="flex-1 flex flex-col items-center px-6 py-12">
         <div className="space-y-4">
           <span className="text-xl leading-heading font-bold">
@@ -14,7 +14,7 @@ export default function Flash() {
             <span className="text-sm font-bold">8/12</span>
           </div>
         </div>
-        <div className="relative mt-20">
+        <div className="relative mt-20 max-w-[480px]">
           <div className="rounded-lg bg-mirage-50 py-6 px-5 mx-6 z-20">
             <p className="text-smoke-950 leading-base text-center min-h-[416px] flex justify-center items-center">
               Method used to traverse an array and create a new array from the
@@ -27,7 +27,7 @@ export default function Flash() {
           </div>
         </div>
       </div>
-      <button className="bg-mirage-50 text-marine-500 py-8 w-full font-bold uppercase hover:bg-mirage-50/90">
+      <button className="bg-mirage-50 text-marine-500 py-8 w-full font-bold uppercase hover:bg-mirage-50/90 md:w-[320px] md:mb-16 md:rounded-full md:py-6">
         Reveal answer
       </button>
     </div>
