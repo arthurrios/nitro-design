@@ -7,8 +7,8 @@ export const fonts = {
     sm: '0.875rem',
   },
 
+  regular: '400',
   fontWeights: {
-    regular: '400',
     bold: '700',
   },
 

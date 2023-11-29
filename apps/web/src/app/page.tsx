@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { MoveRight } from 'lucide-react'
 import { ProgressCircle } from './components/progress-circle'
+import { Button, ButtonIcon, ButtonText } from 'ui'
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
             return (
               <div
                 key={i}
-                className="flex flex-col gap-5 py-6 px-5 rounded-lg border border-mirage-100 shadow-lg"
+                className="flex flex-col gap-5 py-6 px-5 rounded-lg border border-mirage-100 shadow-lg transition-transform hover:scale-[1.025] duration-300"
               >
                 <span className="font-bold text-sm text-mirage-600 leading-heading">
                   JAVASCRIPT
@@ -40,13 +41,11 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <a
-                    href="#"
-                    className="py-3 px-5 flex items-center gap-3 font-bold text-sm bg-marine-500 rounded-md text-mirage-50 hover:bg-marine-600 transition-colors "
-                  >
-                    Access collection
-                    <MoveRight className="w-5 h-5" />
-                  </a>
+                  <Button>
+                    <ButtonText>Access Collection</ButtonText>
+                    <ButtonIcon icon={MoveRight} />
+                  </Button>
+
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-6">
                       <ProgressCircle progress={50} />
